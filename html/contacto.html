@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header id="encabezado">  
+    <nav class="menu-nav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./staff.html">Staff</a></li>
+          <li><a href="./examenesInternacionales.html">Exámenes internacionales </a>
+                <ul>
+                  <li><a href="./examenesInternacionales.html#PET">PET</a></li>
+                  <li><a href="./examenesInternacionales.html#FCE">FCE</a></li>
+                  <li><a href="./examenesInternacionales.html#CAE">CAE</a></li>
+                </ul>
+          </li>
+          <li><a href="./galeria.html">Galería de imágenes</a></li>  
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main class="principal">
+    <form>
+      <fieldset>
+        <legend> <h1>Datos de contacto</h1></legend>
+        <br>
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" placeholder="Escribí tu nombre y Apellido" name="nombre" required>
+        <br>
+        <br>
+        <label for="mail"> Dirección de mail:</label>
+        <input type="email" placeholder="Escribí tu dirección de correo electrónico" name="mail" required>
+        <br>
+        <br>
+        <label for="motivo">¿Cuál es el motivo de tu consulta?</label>
+        <br>
+        <textarea rows="2" cols="60" placeholder="Escribí una breve descripción para poder ayudarte con mayor precisión" name="motivo" required> </textarea>
+        <br>
+        <br>
+        <label class="campo" for="rol">Mi rol en la escuela es</label>
+        <br>
+        <select name="rol" required> 
+          <option value="D">Docente</option>
+          <option value="A">Alumno/a</option>
+          <option value="P">Familiar o Tutor/a</option> 
+          <option value="O">Otro</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar"/>
+      </fieldset>
+    </form>
+  </main>  
+
+  <footer id="pie">
+    <ul>
+      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

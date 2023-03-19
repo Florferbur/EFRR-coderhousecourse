@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap'); /*de dónde saco las fuentes*/
+
+* {
+    padding: 0; /*reseteo*/
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #333652;
+    color: #6a7968;
+    font-family: "Source Sans Pro", sans-serif;
+    }
+
+header {
+    position:sticky;/*hace que se fije arriba*/
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    text-align:center;
+}
+
+ul li {
+    list-style:none ; /*saca los bullet points*/
+    display: inline-block; /*deja de ser de bloque*/
+    margin: 0px 10px;
+    padding: 5px;
+}
+
+ul li a { /*todos los enlaces dentro de cada ul se le cambia el color, fuente y subray */
+    color:#efd362 ;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.menu-nav { /*config general de todo el nav*/
+    background-color: #02294a;
+    padding: 12px;
+    margin: 10px, 0;
+}
+
+   
+.menu-nav ul li { /*todos los items dentro de la ul que se encuentran en menu-nav dejan de ser de bloque*/
+    display:inline-block;
+    position:relative;
+}
+
+.menu-nav ul ul li { /*todos los submenús de primer nivel son de bloque*/
+    display: block;
+}
+
+.menu-nav ul a:hover { /*cuando me paro arriba del menú con el cursor cambia el color*/
+    background-color:#021321;
+}
+
+.menu-nav ul li:hover > ul { /*todos los submenúes de los elementos en la ul, al hacer hover, que se vean así*/
+    background-color: #022847;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu-nav ul ul { /*se esconde el submenú*/
+    display:none;
+}
+
+
+
+
+footer ul li {
+    color: #E9EAEC;
+}
+
+h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+/* index */
+.principal img {
+    width:100%;   
+}
+
+/*galería*/
+.galeria-principal img{
+    display:block;/*para que me aparezcan una abajo de la otra*/
+    padding: 2px;
+    margin-left:auto; /*esto lo hice para centrarlo en pantalla*/
+    margin-right: auto;
+    width: 450px;
+}
+
+/*exámenes*/
+.seccion-info p, h2 {
+    padding: 15px;
+    margin: 15px;
+}
+
+.examen {
+    display:inline-block;
+    position: relative;
+    width: 30%;
+    padding: 12px;
+    margin: 10px;
+    text-align: center;
+}
+
+.examen iframe {
+    width: 100%;
+}
+
+.infografia img{
+    display: block;
+    width:600px;
+    margin-left:auto; 
+    margin-right: auto;
+}
+
+/* contacto*/
+fieldset {
+    padding:12px;
+    margin: 12px;
+    display: block;
+    text-align:center;
+    font-size: 1.4tem;
+}
+
+/*staff*/
+.profesores {
+    display:inline-block;
+    padding: 10px;
+    margin: 5px;
+    text-align:center;
+    align-items:normal;
+}
+
+.profesores h4 {
+    font-size: 1.2rem ;
+}
+
+.profesores img{
+    width: 200px;
+    overflow: hidden;
+
+}
+
+.grupo-profesores {
+    width: fit-content;
+    margin-left:auto; 
+    margin-right: auto;
+}
+
+/*lista de tareas:
+
+2.completar página Staff y dar formato
+3.armar los 10 moqups
+4.enviar */
