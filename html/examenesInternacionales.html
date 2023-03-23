@@ -9,33 +9,46 @@
 </head>
 
 <body>
-  <header id="encabezado">  
-    <nav class="menu-nav">
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./staff.html">Staff</a></li>
-        <li><a href="./examenesInternacionales.html">Exámenes internacionales </a>
-            <ul>
-              <li><a href="./examenesInternacionales.html#PET">PET</a></li>
-              <li><a href="./examenesInternacionales.html#FCE">FCE</a></li>
-              <li><a href="./examenesInternacionales.html#CAE">CAE</a></li>
-            </ul>
-        </li>
-        <li><a href="./galeria.html">Galería de imágenes</a></li>  
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
+  <header id="encabezado" class="flex-container">  
+    
+    <div class="encabezado__logo">
+      <a href="../index.html"> 
+        <img id="logo" class="encabezado__logo__img" src="../images/ETRR_LOGO.png" alt="Logo">  
+      </a>
+    </div>
 
+    <nav class="menu-nav flex-container" >
+      <ul class="menu-nav-list">
+        <li><a class="nav-item" href="../index.html">Inicio</a></li>
+        <li><a class="nav-item" href="./staff.html">Staff</a></li>
+        <li><a class="nav-item" href="./examenesInternacionales.html">Exámenes internacionales </a>
+            <ul>
+              <li><a class="nav-subitem"href="./examenesInternacionales.html#PET">PET</a></li>
+              <li><a class="nav-subitem" href="./examenesInternacionales.html#FCE">FCE</a></li>
+              <li><a class="nav-subitem" href="./examenesInternacionales.html#CAE">CAE</a></li>
+            </ul>
+          </li>
+        <li><a class="nav-item" href="./galeria.html">Galería de imágenes</a></li>  
+        <li><a class="nav-item"
+           href="./contacto.html">Contacto</a></li>
+        
+      </ul>
     </nav>
   </header>
 
-  <main class="principal">
-    <h1>Exámenes Internacionales</h1>
-    <section id="porQueCambridge" class="seccion-info">
-      <div>
-        <h2> Línea de exámenes de Cambridge. ¿Por qué los elegimos? </h2>
-        <p>Hay diferentes tipos de exámenes que se rigen por el CFER. Es decir que se puede alcanzar el nivel B2, por ejemplo, sin necesariamente haber rendido el examen B2 First. En la <strong> Escuela Falsa Ricardo Rubén</strong> elegimos los exámenes de Cambridge por su amplio reconocimiento por parte de universidades y por el mercado laboral. Nuestro objetivo es que, al terminar el último año en la escuela, los alumnos y alumnas puedan desempeñarse en un ámbito profesional internacional correctamente</p>
-      </div>
-    </section>
+  <h1>Exámenes Internacionales</h1>
+
+  <main class="examenes__principal">
+    <div class="esol">
+      <img src="../images/ESOL.png" alt="University of Cambridge -ESOL">
+      
+      <section id="porQueCambridge" class="seccion-info">
+        <div>
+          <h2> Exámenes de Cambridge. ¿Por qué los elegimos? </h2>
+          <p>Hay diferentes tipos de exámenes que se rigen por el CFER. Es decir que se puede alcanzar el nivel B2, por ejemplo, sin necesariamente haber rendido el examen B2 First. En la <strong> Escuela Técnica Ricardo Rubén</strong> elegimos los exámenes de Cambridge por su amplio reconocimiento por parte de universidades y por el mercado laboral. Nuestro objetivo es que, al terminar el último año en la escuela, los alumnos y alumnas puedan desempeñarse en un ámbito profesional internacional correctamente</p>
+        </div>
+      </section>
+    </div>
 
     <section id="CFER" class="seccion-info">
       <div>
@@ -52,34 +65,41 @@
 
     <section id="examenes-rendidos" class="seccion-info">
       <div>
-        <h2> ¿Qué exámenes se rinden en la EFRR?</h2>
-        <p> Los alumnos y alumnas de la EFRR se prepararan para rendir tres exámenes a lo largo de su paso por la escuela: B1 Preliminary, B2 First, y C1 Advanced.
+        <h2> ¿Qué exámenes se rinden en la ETRR?</h2>
+        <p> Los alumnos y alumnas de la ETRR se prepararan para rendir tres exámenes a lo largo de su paso por la escuela: B1 Preliminary, B2 First, y C1 Advanced. Todos aquellos estudiantes que demuestren compromiso con el aprendizaje de la segunda lengua y se destaquen en su desempeño pueden ser parcial o totalmente becados por la ETRR para rendir alguno o todos estos exámenes. A través de varios Mock Exams a lo largo del año escolar se determina quiénes son los posibles candidatos. 
         </p>
       </div>
+    </section>
+    
 
-    <aside id="PET" class="examen">
-      <h3> ¿Qué es el examen B1 Preliminary?</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cN-lfmJaPik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </aside>
+    <section class="niveles"> 
 
-    <aside id="FCE" class="examen">
-      <h3> ¿Qué es el examen B2 First?</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/nh8EGI5WFCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-      </iframe>
-    </aside>
+      <div class="FCE" class="examen">
+        <h3> ¿Qué es el examen B2 First?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nh8EGI5WFCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+      </div>
 
-    <aside id="CAE" class="examen">
-      <h3> ¿Qué es el examen C1 Advanced?</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/3dVK0VMLx8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </aside>
+      <div class="PET" class="examen">
+        <h3> ¿Qué es el examen B1 Preliminary?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cN-lfmJaPik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+  
+      <div class="CAE" class="examen">
+        <h3> ¿Qué es el examen C1 Advanced?</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3dVK0VMLx8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
+    
+
   </main>
 
   <footer id="pie">
-    <ul>
-      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-      <li> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-    </ul>
+    <div><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+    <div> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></div>
+    <div><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
   </footer>
 
 </body>

@@ -5,25 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>EFRR</title>
+  <title>ETRR</title>
 </head>
 
 <body>
   
-  <header id="encabezado">  
-    <nav class="menu-nav">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="./html/staff.html">Staff</a></li>
-        <li><a href="./html/examenesInternacionales.html">Exámenes internacionales </a>
-            <ul>
-              <li><a href="./html/examenesInternacionales.html#PET">PET</a></li>
-              <li><a href="./html/examenesInternacionales.html#FCE">FCE</a></li>
-              <li><a href="./html/examenesInternacionales.html#CAE">CAE</a></li>
-            </ul>
-          </li>
-        <li><a href="./html/galeria.html">Galería de imágenes</a></li>  
-        <li><a href="./html/contacto.html">Contacto</a></li>
+  <header id="encabezado" class="flex-container">  
+    
+    <div class="encabezado__logo">
+      <a href="index.html"> 
+      <img id="logo" class="encabezado__logo__img" src="./images/ETRR_LOGO.png" alt="Logo" href="./index.html"> 
+      </a>
+    </div>
+
+    <nav class="menu-nav flex-container" >
+      <ul class="menu-nav-list">
+        <li><a class="nav-item" href="index.html">Inicio</a></li>
+        <li><a class="nav-item" href="./html/staff.html">Staff</a></li>
+        <li><a class="nav-item" href="./html/examenesInternacionales.html">Exámenes internacionales </a></li>
+        <li><a class="nav-item" href="./html/galeria.html">Galería de imágenes</a></li>  
+        <li><a class="nav-item"
+           href="./html/contacto.html">Contacto</a></li>
         
       </ul>
     </nav>
@@ -31,18 +33,20 @@
 
   <main>
     <section class="principal">
-      <h1> EFRR - Departamento de Inglés </h1>
-      <img src="./images/ecuela_bandera.jpg" alt="Escuela Falsa Ricardo Rubén"> 
+      <h1> ETRR - Departamento de Inglés </h1>
+      <p> Excelencia, Transparencia, Respeto y Red son los 4 valores que compartimos y guían nuestras acciones como miembros de la Escuela Técnica Ricardo Rubén. A través del trabajo coordinado, consciente y conjunto como departamento académico, nos proponemos potenciar estos cuatro valores.</p>
+
+
+      <img src="./images/ecuela_bandera.jpg" alt="Escuela Técnica Ricardo Rubén"> 
     </section>
   </main>
 
 
   <footer id="pie">
-    <ul>
-      <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-      <li> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-      <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-    </ul>
+    <div><a href="https://www.instagram.com/" target="_blank">Instagram</a></div>
+    <div> <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></div>
+    <div><a href="https://www.youtube.com" target="_blank">Youtube</a></div>
   </footer>
+
 </body>
 </html>
