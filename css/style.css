@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     }
+ 
 
 .principal p {
     margin: 15px;
@@ -119,6 +120,7 @@ a:hover {
 h1 {
     padding: 15px;
     text-align: center;
+    font-family:unset  ;
 }
 
 /* index */
@@ -133,6 +135,12 @@ h1 {
     margin-left:auto; /*esto lo hice para centrarlo en pantalla*/
     margin-right: auto;
     width: 450px;
+    background-color: #333652;
+}
+
+
+.carousel-item img{
+    border-radius: .5%;
 }
 
 
@@ -269,7 +277,7 @@ fieldset {
     justify-content: space-evenly;
     margin: auto;
     align-items:flex-start;
-    flex-wrap: row;
+    flex-direction: row;
     flex-wrap: wrap; 
 }
 
@@ -295,3 +303,65 @@ fieldset {
     border-radius:15%;
     box-shadow: 1px;
 }
+
+/* Media Queries*/
+
+ /*Tablet*/
+@media only screen and (max-width:768px){}
+
+ /*Mobile*/
+
+@media only screen and (max-width:576px) {
+    #encabezado {
+    align-items: flex-start;
+    align-content:flex-start;
+    left: 0;
+    width: auto;
+    height: auto;
+    }
+   
+    .flex-container {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .menu-nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .grupo-profesores {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+.examenes__principal {
+    flex-direction: column;
+    padding: 5px;
+}
+
+.esol {
+    flex-direction: column;
+}
+
+.seccion-info {
+    flex-direction: column;
+    padding: 5px;
+}
+
+.niveles {
+display:flex;
+flex-direction: column;
+}
+
+.form-container {
+    align-items: baseline;
+    padding: 10%;
+}
+
+}
+
+
