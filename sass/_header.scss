@@ -1,0 +1,52 @@
+/*header*/
+
+header {
+    position:sticky;/*hace que se fije arriba*/
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    background-color: #e3e4ec;
+    color:#323030;
+    font-size:small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+
+.menu-nav { /*config general de todo el nav*/
+        padding: 12px;
+        margin: 10px, 0;
+        display:flex;
+    
+        ul li:hover > ul { /*todos los submenúes de los elementos en la ul, al hacer hover, que se vean así*/
+            background-color: #e3e4ec;
+            color:#FF6520;    
+            display: block;
+            position: absolute;
+            top: 100%;
+    
+            ul { /*se esconde el submenú*/
+                display:none;
+            }
+        }
+    
+        .menu-nav-list {
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+    
+            .nav-item {
+                justify-content: flex-start;
+                align-content:flex-start;
+                flex: auto;
+            }
+        }  
+    }  
+
+#logo {
+    height:40px;
+    width: auto;
+    padding: 15%
+}

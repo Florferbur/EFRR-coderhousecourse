@@ -1,0 +1,14 @@
+/*galería*/
+.galeria-principal img{
+    display:block;/*para que me aparezcan una abajo de la otra*/
+    padding: 2px;
+    margin-left:auto; /*esto lo hice para centrarlo en pantalla*/
+    margin-right: auto;
+    width: 450px;
+    background-color: #333652;
+}
+
+
+.carousel-item img{
+    border-radius: .5%;
+}

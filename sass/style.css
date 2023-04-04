@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap"); /*de dónde saco las fuentes*/
+
+/* index */
+.principal img {
+  width: 100%;
+}
+
+/*header*/
+header {
+  position: sticky; /*hace que se fije arriba*/
+  top: 0;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  background-color: #e3e4ec;
+  color: #323030;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-nav { /*config general de todo el nav*/
+  padding: 12px;
+  margin: 10px, 0;
+  display: flex;
+}
+.menu-nav ul li:hover > ul { /*todos los submenúes de los elementos en la ul, al hacer hover, que se vean así*/
+  background-color: #e3e4ec;
+  color: #FF6520;
+  display: block;
+  position: absolute;
+  top: 100%;
+}
+.menu-nav ul li:hover > ul ul { /*se esconde el submenú*/
+  display: none;
+}
+.menu-nav .menu-nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-nav .menu-nav-list .nav-item {
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex: auto;
+}
+
+#logo {
+  height: 40px;
+  width: auto;
+  padding: 15%;
+}
+
+/*staff*/
+.grupo-profesores {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profesores {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  justify-content: center;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+.profesores h4 {
+  font-size: 1rem;
+  padding: 10px;
+}
+.profesores img {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 15%;
+  box-shadow: 1px;
+}
+
+/*exámenes*/
+.seccion-info p, h2 {
+  padding: 15px;
+  margin: 15px;
+}
+
+/*.examen {
+    display:inline-block;
+    position: relative;
+    width: 30%;
+    padding: 12px;
+    margin: 10px;
+    text-align: center;
+}
+
+.examen iframe {
+    width: 100%;
+}*/
+iframe {
+  max-width: 350px;
+}
+
+.infografia {
+  align-self: flex-end;
+}
+.infografia img {
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+
+.examenes__principal {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.esol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.esol img {
+  border-radius: 5%;
+  width: auto;
+  height: 150px;
+}
+
+#CFER {
+  display: flex;
+}
+
+.niveles {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.niveles .FCE {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.niveles .PET {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.niveles .CAE {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.examen {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+/*galería*/
+.galeria-principal img {
+  display: block; /*para que me aparezcan una abajo de la otra*/
+  padding: 2px;
+  margin-left: auto; /*esto lo hice para centrarlo en pantalla*/
+  margin-right: auto;
+  width: 450px;
+  background-color: #333652;
+}
+
+.carousel-item img {
+  border-radius: 0.5%;
+}
+
+/* contacto*/
+fieldset {
+  padding: 12px;
+  margin: 12px;
+  display: block;
+  text-align: center;
+  font-size: 1.4tem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  align-items: flex-end;
+  padding-right: 15%;
+}
+
+.input-group {
+  padding: 10px;
+}
+
+/*footer*/
+#pie {
+  background-color: #e3e4ec;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  gap: 15px;
+}
+
+.pie__red {
+  flex: auto;
+  width: 100%;
+  padding: 15px;
+}
+
+* {
+  padding: 0; /*reseteo*/
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333652;
+  color: #6a7968;
+  font-family: Raleway, sans-serif;
+  position: relative;
+  min-height: l00vh;
+}
+
+.principal p {
+  margin: 15px;
+  line-height: 150%;
+}
+
+ul {
+  text-align: center;
+}
+ul li {
+  list-style: none; /*saca los bullet points*/
+  display: inline-block; /*deja de ser de bloque*/
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+a { /*todos los enlaces se le cambia el color, fuente y subray */
+  color: #323030 !important; /*al usar Bootstrap cambió esta config personalizada*/
+  font-size: 1rem;
+  text-decoration: none !important;
+  display: block;
+}
+
+a:hover {
+  color: #FF6520 !important; /*al usar Bootstrap cambió esta config personalizada*/
+  text-decoration: underline !important;
+}
+
+h1 {
+  padding: 15px;
+  text-align: center;
+  font-family: unset;
+}
+
+/* Media Queries*/
+/*Tablet*/
+/*Mobile*/
+@media only screen and (max-width: 576px) {
+  #encabezado {
+    align-items: flex-start;
+    align-content: flex-start;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
+  .flex-container {
+    width: auto;
+    justify-content: flex-start;
+  }
+  .menu-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .grupo-profesores {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .examenes__principal {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .esol {
+    flex-direction: column;
+  }
+  .seccion-info {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .niveles {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    align-items: baseline;
+    padding: 10%;
+  }
+}/*# sourceMappingURL=style.css.map */
