@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap'); /*de dónde saco las fuentes*/
 
+
+$naranjaEtrr: #FF6720;
+$celesteEtrr: #0071cd;
+$grisEtrr: #c5c5c5;
+$grisTexto: #666666;
+$fondo: #eeeeee;
+
 @import "index";
-@import "header";
 @import "staff";
 @import "examenesinternacionales";
 @import "galeria";
 @import "contacto";
+@import "header";
 @import "footer";
 
+
+
+/*estilos generales*/
 
 * {
     padding: 0; /*reseteo*/
@@ -16,15 +26,15 @@
 }
 
 body{
-    background-color: #333652;
-    color: #6a7968;
+    background-color: $fondo ;
+    color: $grisTexto;
     font-family: Raleway, sans-serif;
     position: relative;
     min-height: l00vh;
     }
 
 .principal p {
-    margin: 15px;
+    margin: 10px 20px;
     line-height:150%;
 }
 
@@ -41,23 +51,28 @@ ul {
 
 
 a { /*todos los enlaces se le cambia el color, fuente y subray */
-    color:#323030 !important; /*al usar Bootstrap cambió esta config personalizada*/
+    color: $grisTexto;
     font-size: 1rem;
-    text-decoration: none !important;
+    text-decoration: none;
     display:block;
-}
 
-a:hover {
-    color:#FF6520 !important; /*al usar Bootstrap cambió esta config personalizada*/
-    text-decoration:underline !important;
+    &:hover {
+        color: $naranjaEtrr;
+        text-decoration:underline;
+}
 }
 
 h1 {
     padding: 15px;
     text-align: center;
-    font-family:unset  ;
+    font-size: 2em  ;
 }
 
+@for $i from 2 to 7 {
+    h#{$i} {
+        font-size: 42px/ $i+2*1.2;
+    }
+}
 
 /* Media Queries*/
  /*Tablet*/

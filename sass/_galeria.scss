@@ -1,14 +1,29 @@
 /*galería*/
+
+
 .galeria-principal img{
     display:block;/*para que me aparezcan una abajo de la otra*/
     padding: 2px;
     margin-left:auto; /*esto lo hice para centrarlo en pantalla*/
     margin-right: auto;
     width: 450px;
-    background-color: #333652;
+    background-color: $grisEtrr ;
+}
+
+.galeria-principal {
+    .container {
+        width: 70% ;
+        box-shadow:10px 5px 5px gray;
+        padding: 20px;
+        border-color: $grisEtrr;
+        align-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 
 .carousel-item img{
     border-radius: .5%;
+    
 }

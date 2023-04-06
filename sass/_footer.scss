@@ -2,18 +2,18 @@
 
 
 #pie {
-    background-color: #e3e4ec;
+    background-color: $grisEtrr ;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
     height: 50px;
     gap: 15px;
- }
+    padding-right: 25px;
 
- .pie__red {
-    flex: auto;
-    width: 100%;
-    padding: 15px;
-
- }
+    .pie__red {
+        flex: auto;
+        width: 100%;
+        padding: 15px;
+    }
+}

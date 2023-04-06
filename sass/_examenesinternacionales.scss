@@ -5,19 +5,6 @@
     margin: 15px;
 }
 
-/*.examen {
-    display:inline-block;
-    position: relative;
-    width: 30%;
-    padding: 12px;
-    margin: 10px;
-    text-align: center;
-}
-
-.examen iframe {
-    width: 100%;
-}*/
-
 iframe {
     max-width: 350px;
 }
@@ -38,6 +25,7 @@ iframe {
     padding: 15px;
     display: flex;
     flex-direction: column;   
+    margin: 0 3%;
 }
 
 .esol {

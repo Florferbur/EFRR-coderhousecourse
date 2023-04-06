@@ -5,6 +5,8 @@ fieldset {
     display: block;
     text-align:center;
     font-size: 1.4tem;
+    width: 75%;
+    margin: 0% 15% 5% 15%;
 }
 
 .form-container{
@@ -13,6 +15,7 @@ fieldset {
     justify-items: stretch;
     align-items:flex-end;
     padding-right:15%;
+    
 }
 .input-group{
     padding: 10px;

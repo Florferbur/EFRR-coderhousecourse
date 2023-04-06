@@ -6,8 +6,8 @@ header {
     width: 100%;
     height: 60px;
     margin: auto;
-    background-color: #e3e4ec;
-    color:#323030;
+    background-color: $grisEtrr;
+    color: $grisTexto ;
     font-size:small;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
     
         ul li:hover > ul { /*todos los submenúes de los elementos en la ul, al hacer hover, que se vean así*/
             background-color: #e3e4ec;
-            color:#FF6520;    
+            color:$naranjaEtrr;    
             display: block;
             position: absolute;
             top: 100%;
@@ -36,6 +36,7 @@ header {
             display:flex;
             justify-content: space-around;
             align-items:center;
+            margin-bottom: 0;
     
             .nav-item {
                 justify-content: flex-start;
