@@ -69,30 +69,19 @@
     <div class="container form-container">
 
       <div class="input-group">
-        <span class="input-group-text">Nombre Completo</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Nombre*"></textarea>
       </div>
 
       <div class="input-group">
-        <span class="input-group-text">Apellido</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-      </div>
-
-      <div class="input-group">
-        <span class="input-group-text">DNI</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Apellido*"></textarea>
       </div>
 
       <div class="input-group mb-3">
-        <span class="input-group-text">Mail</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        <input type=mail class="form-control" placeholder="Email*" aria-label="Email">
       </div>
 
       <div class="input-group">
-        <span class="input-group-text">Teléfono de contacto</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" aria-label="With textarea" placeholder="Teléfono*"></textarea>
       </div>
       
 
@@ -103,23 +92,24 @@
         <option value="3">Padre/Madre</option>
         <option value="4">Otro</option>
       </select>
+    </div>
+
+
+    <div class="container whole-width form-container">
 
       <div class="input-group">
-        <span class="input-group-text">¿Cuál es el motivo de tu consulta?</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
+        <textarea class="form-control" placeholder="¿Cuál es el motivo de tu consulta?" aria-label="With textarea"></textarea>
       </div>
 
-      <select class="form-select input-group" aria-label="Default select example">
-        <option selected> ¿Cómo preferís que te contactemos?</option>
-        <option value="1">Mail</option>
-        <option value="2">Videollamada</option>
-        <option value="3">Llamada telefónica</option>
-      </select>
+      <label for="check" class="input-group ">
+        <div class="input-container no-robot">
+          <input type="checkbox" class="checkbox" id="check">
+          <span class="checkbox-text">No soy un robot</span>
+          <img src="../images/robot.png" alt="funny robot face" class="emoticon">
+        </div>
+      </label>
 
       <button type="submit" class="btn btn-primary input-group">Enviar consulta</button>
-
-
-
     </div>
     </fieldset>
   </form>

@@ -7,6 +7,10 @@
 
 iframe {
     max-width: 350px;
+    transition: 0.45s ease-in-out;
+    &:hover {
+        scale: 1.25;
+    }
 }
 
 .infografia {

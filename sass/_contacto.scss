@@ -5,19 +5,57 @@ fieldset {
     display: block;
     text-align:center;
     font-size: 1.4tem;
-    width: 75%;
-    margin: 0% 15% 5% 15%;
+    margin: 0% 5% 5% 5%;
+    .whole-width {
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+            width: 120px;
+
+        .input-group {
+            width:350px;
+            justify-items: center; 
+            }
+          
+        }
+    }
+        
 }
+
 
 .form-container{
     display: flex;
-    flex-direction: column;
-    justify-items: stretch;
-    align-items:flex-end;
-    padding-right:15%;
-    
-}
-.input-group{
-    padding: 10px;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    padding:0 10%;
+   
 
+    .no-robot {
+        width: 350px;
+    }
+
+    .input-group {
+        margin: 7px;
+        width: 350px;
+        height: 40px;
+        justify-content: center;
+        align-content: center;
+        
+        /*width: 400px; */
+
+        .input-container {
+            align-content: center;
+        }
+    }
+
+      .form-control {
+        width:350px;
+        height: 40px;
+    }
+
+   
+       
+}
