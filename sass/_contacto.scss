@@ -39,10 +39,12 @@ fieldset {
 
     .input-group {
         margin: 7px;
-        width: 350px;
         height: 40px;
         justify-content: center;
         align-content: center;
+        &:focus {
+            width:500px;
+        }
         
         /*width: 400px; */
 
@@ -54,8 +56,13 @@ fieldset {
       .form-control {
         width:350px;
         height: 40px;
+        &:focus {
+            width: 380px;
+            font-size: 1.45em;
+            background-color: $grisEtrr;
+        }
+        }
     }
 
    
        
-}

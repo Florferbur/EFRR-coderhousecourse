@@ -81,7 +81,54 @@ h1 {
 
 /* Media Queries*/
  /*Tablet*/
-@media only screen and (max-width:768px){}
+@media only screen and (max-width:768px){
+    #encabezado {
+        align-items: flex-end;
+        align-content:flex-end;
+        left: 0;
+        width: auto;
+        height: auto;
+        }
+       
+        .flex-container {
+            width: auto;
+            justify-content: flex-start;
+        }
+    
+        .menu-nav-list {
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+    
+      
+    
+        .examenes__principal {
+            flex-direction: column;
+            padding: 5px;
+        }
+    
+        .esol {
+            flex-direction: column;
+        }
+    
+        .seccion-info {
+            flex-direction: column;
+            padding: 5px;
+        }
+    
+        .niveles {
+        display:flex;
+        flex-direction: column;
+        }
+    
+        .form-container {
+            align-items: baseline;
+            padding: 10%;
+        }
+    
+}
+
 
 /*Mobile*/
 @media only screen and (max-width:576px) {
@@ -133,6 +180,17 @@ h1 {
     .form-container {
         align-items: baseline;
         padding: 10%;
+        width: 300px;
     }
 
+    .form-container .form-control {
+        width: 170px;
+    }
+
+    .form-container .form-control:focus {
+        width: 200px;
+        
+    }
+
+  
 }
